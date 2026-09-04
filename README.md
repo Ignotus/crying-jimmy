@@ -15,11 +15,12 @@ Browser extension for **Firefox** and **Google Chrome** that replaces Wikipedia�
 
 ## Install (Firefox)
 
-1. Open `about:debugging#/runtime/this-firefox`
-2. Click **Load Temporary Add-on…**
-3. Select `manifest.json` in this folder
+1. Download the signed `crying_jimmy-*-firefox.xpi` from the [GitHub Releases](https://github.com/Ignotus/crying-jimmy/releases) page
+2. Open Firefox → **Settings** → **Extensions & Themes** (or `about:addons`)
+3. Click the gear icon → **Install Add-on From File…**
+4. Select the downloaded `.xpi`
 
-Temporary add-ons in Firefox are removed when the browser restarts. For a lasting install, pack as an `.xpi` or use a local self-distribution flow.
+You can also drag the `.xpi` onto a Firefox window to install it.
 
 ## What it does
 
