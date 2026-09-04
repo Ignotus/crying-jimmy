@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Crying Jimmy",
+  "version": "1.0.1",
+  "description": "Replaces Wikipedia's modern donation banners with the classic Jimmy Wales personal appeal.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wikipedia.org/*",
+        "*://*.wikimedia.org/*",
+        "*://*.wiktionary.org/*",
+        "*://*.wikiquote.org/*",
+        "*://*.wikibooks.org/*",
+        "*://*.wikisource.org/*",
+        "*://*.wikinews.org/*",
+        "*://*.wikivoyage.org/*",
+        "*://*.wikiversity.org/*",
+        "*://*.mediawiki.org/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/jimmy.jpg"],
+      "matches": [
+        "*://*.wikipedia.org/*",
+        "*://*.wikimedia.org/*",
+        "*://*.wiktionary.org/*",
+        "*://*.wikiquote.org/*",
+        "*://*.wikibooks.org/*",
+        "*://*.wikisource.org/*",
+        "*://*.wikinews.org/*",
+        "*://*.wikivoyage.org/*",
+        "*://*.wikiversity.org/*",
+        "*://*.mediawiki.org/*"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "crying-jimmy@local",
+      "strict_min_version": "109.0"
+    }
+  }
+}

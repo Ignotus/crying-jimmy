@@ -1,0 +1,167 @@
+/* Classic 2010–2011 Jimmy Wales fundraising banner */
+
+#crying-jimmy-banner {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fbfbfb;
+  border-bottom: 1px solid #a7d7f9;
+  font-family: sans-serif;
+  color: #000;
+  position: relative;
+  z-index: 100;
+}
+
+#crying-jimmy-banner *,
+#crying-jimmy-banner *::before,
+#crying-jimmy-banner *::after {
+  box-sizing: border-box;
+}
+
+#crying-jimmy-banner .cj-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 40px 14px 16px;
+}
+
+#crying-jimmy-banner .cj-photo {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 112px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid #a2a9b1;
+  background: #eaecf0;
+}
+
+#crying-jimmy-banner .cj-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+#crying-jimmy-banner .cj-headline {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000;
+}
+
+#crying-jimmy-banner .cj-body {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #202122;
+}
+
+#crying-jimmy-banner .cj-signoff {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #202122;
+}
+
+#crying-jimmy-banner .cj-signoff strong {
+  font-weight: 700;
+}
+
+#crying-jimmy-banner .cj-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+#crying-jimmy-banner .cj-donate {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #36c;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #36c;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#crying-jimmy-banner .cj-donate:hover,
+#crying-jimmy-banner .cj-donate:focus {
+  background: #2a4b8d;
+  border-color: #2a4b8d;
+}
+
+#crying-jimmy-banner .cj-later {
+  font-size: 12px;
+  color: #0645ad;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#crying-jimmy-banner .cj-later:hover,
+#crying-jimmy-banner .cj-later:focus {
+  text-decoration: underline;
+}
+
+#crying-jimmy-banner .cj-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #54595d;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+#crying-jimmy-banner .cj-close:hover,
+#crying-jimmy-banner .cj-close:focus {
+  color: #000;
+}
+
+@media (max-width: 640px) {
+  #crying-jimmy-banner .cj-inner {
+    padding: 12px 36px 14px 12px;
+    gap: 12px;
+  }
+
+  #crying-jimmy-banner .cj-photo {
+    width: 64px;
+    height: 82px;
+  }
+
+  #crying-jimmy-banner .cj-headline {
+    font-size: 14px;
+  }
+
+  #crying-jimmy-banner .cj-body,
+  #crying-jimmy-banner .cj-signoff {
+    font-size: 12px;
+  }
+}
+
+/* Hide original fundraising UI once we've replaced it */
+html.crying-jimmy-active #centralNotice,
+html.crying-jimmy-active .frb,
+html.crying-jimmy-active .frb-main,
+html.crying-jimmy-active .cn-fundraising,
+html.crying-jimmy-active .mw-frb,
+html.crying-jimmy-active [data-fundraising-banner],
+html.crying-jimmy-active .wp-frb {
+  display: none !important;
+}

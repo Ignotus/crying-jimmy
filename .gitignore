@@ -1,0 +1,22 @@
+# Build artifacts
+dist/
+web-ext-artifacts/
+*.zip
+*.xpi
+*.crx
+
+# Local tooling / temp
+.venv/
+.assets/
+node_modules/
+.amo-upload-uuid
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*~
+releases/
