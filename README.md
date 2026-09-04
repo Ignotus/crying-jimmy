@@ -8,10 +8,13 @@ Browser extension for **Firefox** and **Google Chrome** that replaces Wikipediaâ
 
 ## Install (Chrome / Chromium / Edge)
 
-1. Open `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select this folder (`crying-jimmy`)
+1. Download `crying_jimmy-*-chrome.zip` from the [GitHub Releases](https://github.com/Ignotus/crying-jimmy/releases) page
+2. Unzip it to a folder you will keep
+3. Open `chrome://extensions`
+4. Enable **Developer mode**
+5. Click **Load unpacked** and select that folder
+
+Chrome does not install `.zip` files directly; the unpacked folder is the permanent install as long as you leave Developer mode on and donâ€™t move/delete the folder.
 
 ## Install (Firefox)
 
